@@ -13,7 +13,7 @@ services:
       JUPYTER_ENABLE_LAB: 'yes'
       GRANT_SUDO: 'yes'
     ports:
-      - 8889:8888
+      - 8888:8888
     command: "start-notebook.sh \
               --NotebookApp.password=${PASSWD} \
               --NotebookApp.certfile=/etc/ssl/notebook/mycert.pem \
